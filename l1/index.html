@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" maximum-scale=1, user-scalable=no>
+
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="../css.css">
+
+</head>
+<body>
+    <p class="zecimale"> Numar zecimale: <input type="text" id="zeci" oninput=cal()> </p>
+    <br>
+    <table align="center" class="table1" border=1>
+        <tr id="line1">
+            <td >NR <br> ctr </td>
+            <td>Tempe-ratura<br>
+                [⁰C]</td>
+            <td>t₀ <br>
+                [s]</td>
+            <td>t<br>
+                [s]</td>
+            <td>t̅₀<br>
+                [s]</td>
+            <td>t̅<br>
+                [s]</td>
+            <td>υ<br>
+                [°E]</td>
+            <td>υ̅<br>
+                [°E]</td>
+            <td>∆υ<br>
+                [°E]</td>
+            <td>∆υₛₜₐₜ<br>
+                [°E]</td>
+                
+        </tr>
+     
+        <tr >
+            <td class="nr1" >1</td>
+            <td rowspan="5" class="temp" ><input type="text" placeholder="Temperatura:" id="01"></td>
+            <td  class="secunde" > <input type="text" placeholder="s"  oninput="cal()" id="1.3"></td>
+            <td  class="secunde"><input type="text" placeholder="s" oninput="cal()"id="1.4"></td>
+            <td class="temp" rowspan="5" id="1.5" ></td>
+            <td class="temp" rowspan="5" id="1.6"></td>
+            <td id="1.7"></td>
+            
+            <td rowspan="5" id="1.8"></td>
+            <td id="1.9"></td>
+            <td rowspan="5" id="1.10"></td>
+            
+        </tr>
+        
+        <tr>
+            <td class="nr1" >2</td>
+            <td class="secunde" > <input type="text" placeholder="s" oninput="cal()" id="2.3"></td>
+            <td class="secunde"><input type="text" placeholder="s" oninput="cal()"id="2.4"></td>
+            <td id="2.7"></td>
+            <td id="2.9"></td>
+          
+        </tr>
+        <tr>
+         
+            <td class="nr1">3</td>
+            <td class="secunde" > <input type="text" placeholder="s" oninput="cal()" id="3.3"></td>
+            <td class="secunde"><input type="text" placeholder="s"oninput="cal()" id="3.4"></td>
+            <td id="3.7"></td>
+            <td id="3.9"></td>
+          
+        </tr>
+        <tr>
+         
+            <td class="nr1">4</td>
+            <td class="secunde" > <input type="text" placeholder="s" oninput="cal()" id="4.3"></td>
+            <td class="secunde"><input type="text" placeholder="s" oninput="cal()"id="4.4"></td>
+            <td id="4.7"></td>
+            <td id="4.9"></td>
+          
+        </tr>
+        <tr>
+           
+            <td class="nr1" >5</td>
+            <td  class="secunde"> <input type="text"  placeholder="s"  oninput="cal()" id="5.3"></td>
+            <td class="secunde"><input type="text" placeholder="s"oninput="cal()" id="5.4"></td>
+            <td id="5.7"></td>
+            <td id="5.9"></td>
+         
+        </tr> 
+        <tr class="linie"> 
+            <td colspan="10"></td>
+        </tr>
+        <tr>
+            <td class="nr1" >1</td>
+            <td rowspan="5" class="temp" ><input type="text" placeholder="Temperatura:" id="02"></td>
+            <td  class="secunde"> <input type="text" placeholder="s" oninput="cal()" id="6.3"></td>
+            <td class="secunde"><input type="text" placeholder="s" oninput="cal()" id="6.4"></td>
+            <td class="temp" rowspan="5" id="6.5"></td>
+            <td class="temp" rowspan="5" id="6.6"></td>
+            <td id="6.7"></td>
+            <td rowspan="5" id="6.8"></td>
+            <td id="6.9"></td>
+            <td id="6.10" rowspan="5"></td>
+        </tr>
+        <tr>
+            <td class="nr1">2</td>
+            <td class="secunde" > <input type="text" placeholder="s" oninput="cal()" id="7.3"></td>
+            <td class="secunde"><input type="text" placeholder="s" oninput="cal()" id="7.4"></td>
+            <td id="7.7"></td>
+            <td id="7.9"></td>
+          
+           
+        </tr>
+        <tr>
+            <td class="nr1">3</td>
+            <td  class="secunde"> <input type="text" placeholder="s" oninput="cal()" id="8.3"></td>
+            <td class="secunde"><input type="text" placeholder="s" oninput="cal()" id="8.4"></td>
+            <td id="8.7" ></td>
+            <td id="8.9"></td>
+         
+         
+        </tr>
+        <tr>
+            <td class="nr1">4</td>
+            <td  class="secunde"> <input type="text" placeholder="s" oninput="cal()" id="9.3"></td>
+            <td class="secunde"><input type="text" placeholder="s" oninput="cal()" id="9.4"></td>
+            <td id="9.7"></td>
+            <td id="9.9"></td>
+        
+         
+        </tr>
+        <tr>
+            <td class="nr1">5</td>
+            <td class="secunde" > <input type="text" placeholder="s" oninput="cal()" id="10.3"></td>
+            <td class="secunde"><input type="text" placeholder="s" oninput="cal()" id="10.4"></td>
+            <td id="10.7"></td>
+            <td id="10.9"></td>
+          
+        
+        </tr>
+        
+
+        
+    </table>
+    <button onclick="start();">aa</button>
+</body>
+<script src="js.js"></script>
+</html>            
+<script src="../js.js">
+</script>
